@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <userName>JohnS</userName>
+        <password>123</password>
+        <name>
+            <fName>John</fName>
+            <lName>Smith</lName>
+        </name>
+        <role>Nurse</role>
+    </user>
+    <user>
+        <userName>Matt</userName>
+        <password>456</password>
+        <name>
+            <fName>Matt</fName>
+            <lName>Smith</lName>
+        </name>
+        <role>Physician</role>
+    </user>
+</users>

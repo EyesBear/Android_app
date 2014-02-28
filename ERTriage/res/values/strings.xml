@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello World!</string>
+    <string name="app_name">ER Triage</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_patient_text">Search Patient</string>
+    <string name="hello_nurse_text">Hello Nurse</string>
+    <string name="add_patient_text">Add Patient</string>
+    <string name="view_patients_by_urgency_text">View Patients by Urgency</string>
+    <string name="view_patients_by_arrival_text">View Patients by Arrival Time</string>
+    <string name="title_activity_search">Search Patient</string>
+    <string name="search_text">Search</string>
+    <string name="health_card_num_hint">Health Card Number</string>
+    <string name="title_activity_take_vitals">Take Vitals</string>
+    <string name="instructions">instructions</string>
+    <string name="heartRate_hint">BPM</string>
+    <string name="sys_hint">Sys</string>
+    <string name="dia_hint">Dia</string>
+    <string name="temperature">Temperature</string>
+    <string name="heartRate">Heart Rate</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="symptoms_hint">Description</string>
+    <string name="save_button">Save</string>
+    <string name="take_vitals">Take Vitals</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="age">Age</string>
+    <string name="hcn">Health Card Number</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="view_visit_button">View Visit</string>
+    <string name="add_visit_button">Add Visit</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name_hint">Jane</string>
+    <string name="middle_name_hint">Elizabeth</string>
+    <string name="last_name_hint">Smith</string>
+    <string name="date_hint">YYYY-MM-DD</string>
+    <string name="seen_by_doc">Patient Seen by a Doctor?</string>
+    <string name="arrival_time">Arrival Time</string>
+    <string name="time_hint">HH:MM</string>
+    <string name="title_activity_get_visit">All Visits</string>
+    <string name="title_activity_view_visit">Visit View</string>
+    <string name="title_activity_patient_record">Patient Record</string>
+    <string name="title_activity_add_patient">Add Patient</string>
+    <string name="title_activity_add_visit">New Visit</string>
+    <string name="urgency">Urgency</string>
+    <string name="doctor">Doctor\'s Name</string>
+    <string name="docs_name_hint">John Edward Smith</string>
+    <string name="take_prescription">Take Presctiption</string>
+    <string name="medicine">Medicine Name</string>
+    <string name="medicine_hint">Name</string>
+    <string name="title_activity_add_prescription">Add Prescription</string>
+    <string name="temp_hint">32</string>
+    <string name="title_activity_list_by_urgency">View Patients By Urgency</string>
+    <string name="add_doctor">If the patient was seen by a doctor, enter doctor\'s name and date &#038; time seen:</string>
+    <string name="date_and_time_seen">Time &#038; Date Seen by Doctor</string>
+    <string name="vitals_and_symptoms">Vitals &#038; Symptoms</string>
+    <string name="prescriptions">Prescriptions</string>
+
+</resources>

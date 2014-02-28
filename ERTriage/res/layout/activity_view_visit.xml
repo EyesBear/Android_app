@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".ViewVisitActivity" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    	<TextView
+      		android:id="@+id/arrival_time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:textSize="18sp"
+        	android:text="@string/arrival_time" />
+    
+    	<TextView
+        	android:id="@+id/p_arrival_time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/arrival_time"
+        	android:layout_alignLeft="@+id/arrival_time"
+        	android:textSize="16sp"
+        	android:text="@+id/p_arrival_time" />
+    
+    	<Button 
+        	android:id="@+id/record_button"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+			android:layout_alignBottom="@+id/p_arrival_time"
+			android:textSize="12sp" 
+			android:text="@+id/record_button"/>
+    
+    	<TextView
+        	android:id="@+id/urgency"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/p_arrival_time"
+        	android:layout_alignLeft="@+id/p_arrival_time"
+        	android:layout_marginTop="10dp"
+        	android:textSize="16sp"
+        	android:text="@string/urgency" />
+    
+    	<TextView
+        	android:id="@+id/p_urgency"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/urgency"
+        	android:layout_alignLeft="@+id/urgency"
+        	android:textSize="14sp"
+        	android:text="@+id/p_urgency" />
+    
+    	<TextView
+        	android:id="@+id/seen_by_doc"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignBottom="@+id/urgency"
+        	android:layout_toRightOf="@+id/urgency"
+        	android:layout_marginLeft="30dp"
+        	android:textSize="16sp"
+        	android:text="@string/date_and_time_seen" />
+    
+    	<TextView
+        	android:id="@+id/p_seen_by_doc"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/seen_by_doc"
+        	android:layout_alignLeft="@+id/seen_by_doc"
+        	android:textSize="14sp"
+        	android:text="@+id/p_seen_by_doc" />
+    
+    	<TextView
+        	android:id="@+id/doctor"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/p_urgency"
+        	android:layout_alignLeft="@+id/p_urgency"
+        	android:layout_marginTop="10dp"
+        	android:textSize="16sp"
+        	android:text="@string/doctor" />
+    
+    	<TextView
+        	android:id="@+id/p_doctor"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/doctor"
+        	android:layout_alignLeft="@+id/doctor"
+        	android:textSize="14sp"
+        	android:text="@+id/p_doctor" /> 
+        	
+    	<TextView
+        	android:id="@+id/vitals"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_below="@+id/p_doctor"
+        	android:layout_alignLeft="@+id/p_doctor"
+        	android:layout_marginTop="10dp"
+        	android:text="@string/vitals_and_symptoms" 
+        	android:textSize="16sp" />
+ 	
+    	<TextView
+        	android:id="@+id/p_vitals"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_below="@+id/vitals"
+        	android:layout_alignLeft="@+id/vitals"
+        	android:textSize="12sp" />
+    
+    	<TextView
+        	android:id="@+id/prescriptions"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_below="@+id/p_vitals"
+        	android:layout_alignLeft="@+id/p_vitals"
+        	android:text="@string/prescriptions"
+        	android:textSize="16sp" />
+    	
+    	<TextView
+        	android:id="@+id/p_prescriptions"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_below="@+id/prescriptions" 
+        	android:layout_alignLeft="@+id/prescriptions"
+        	android:textSize="14sp" />
+    	
+    	<TextView 
+        	android:id="@+id/add_doctor"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/p_prescriptions"
+        	android:layout_alignLeft="@+id/p_prescriptions"
+        	android:layout_marginTop="15dp"
+        	android:textSize="16sp"
+        	android:text="@string/add_doctor" />
+    
+    	<EditText
+        	android:id="@+id/doctor_name_field"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:layout_below="@+id/add_doctor"
+			android:layout_alignLeft="@+id/add_doctor"
+			android:hint="@string/docs_name_hint" />
+    
+    	<EditText
+        	android:id="@+id/date_field"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:layout_below="@+id/doctor_name_field"
+			android:layout_alignLeft="@+id/doctor_name_field"
+			android:hint="@string/date_hint"
+			android:inputType="date" />
+    
+    	<EditText
+        	android:id="@+id/time_field"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/date_field"
+			android:layout_marginLeft="5dp"
+			android:layout_toRightOf="@+id/date_field"
+			android:hint="@string/time_hint"
+			android:inputType="datetime" />
+		
+		<Button
+	    	android:id="@+id/saving_button"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:layout_below="@+id/date_field"
+			android:layout_alignLeft="@+id/date_field"
+			android:text="@string/save_button" />
+    
+	</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddVisitActivity" >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/arrival_time" />
+        
+    <EditText
+        android:id="@+id/time_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignLeft="@+id/time"
+        android:inputType="datetime"
+        android:hint="@string/time_hint" />
+
+    <TextView
+        android:id="@+id/heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_field"
+        android:layout_alignLeft="@+id/time_field"
+        android:layout_marginTop="15dp"
+        android:text="@string/heartRate" />
+        
+    <EditText
+        android:id="@+id/heart_rate_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heart_rate"
+        android:layout_alignLeft="@+id/heart_rate"
+        android:inputType="number"
+        android:hint="@string/heartRate_hint" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_field"
+        android:layout_toRightOf="@+id/heart_rate"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/temperature" />
+        
+    <EditText
+        android:id="@+id/temp_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp"
+        android:layout_toRightOf="@+id/heart_rate_field"
+        android:layout_alignLeft="@+id/temp"
+        android:inputType="numberDecimal"
+        android:hint="@string/temp_hint" />
+    
+    <TextView
+        android:id="@+id/blood_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heart_rate_field"
+        android:layout_alignLeft="@+id/heart_rate_field"       
+        android:layout_marginTop="15dp"
+        android:text="@string/blood_pressure" />
+    
+    <EditText
+        android:id="@+id/sys_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blood_pressure"
+        android:layout_alignLeft="@+id/blood_pressure"
+        android:inputType="number"
+        android:hint="@string/sys_hint" />
+    
+    <EditText
+        android:id="@+id/dia_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sys_field"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="@string/dia_hint" />
+    
+    <TextView
+        android:id="@+id/symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_field"
+        android:layout_alignLeft="@+id/sys_field"
+        android:layout_marginTop="15dp"
+        android:text="@string/symptoms" />
+   
+    <EditText
+        android:id="@+id/symptoms_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptoms"
+        android:hint="@string/symptoms_hint" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptoms_field"
+        android:layout_alignLeft="@+id/symptoms_field"
+        android:layout_marginTop="15dp"
+        android:onClick="addVisit"
+        android:text="@string/save_button" />
+    
+</RelativeLayout>

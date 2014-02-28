@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TakeVitalsActivity" >
+
+    <TextView
+        android:id="@+id/take_vitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_vitals" />
+    
+    <TextView
+	    android:id="@+id/temperature"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/temp_field"
+	    android:layout_alignBottom="@+id/temp_field"
+	    android:layout_alignLeft="@+id/take_vitals"
+	    android:layout_marginTop="25dp"
+	    android:text="@string/temperature" />
+    
+	<EditText
+	    android:id="@+id/temp_field"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/heartRate_field"
+	    android:layout_below="@+id/take_vitals"
+	    android:layout_marginTop="22dp"
+	    android:inputType="number"
+	    android:hint="@string/temp_hint" />
+    
+    <EditText
+        android:id="@+id/heartRate_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:inputType="number"
+        android:hint="@string/heartRate_hint" />
+  
+	<EditText
+	    android:id="@+id/bloodPressureSys_field"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/symptoms_field"
+	    android:layout_below="@+id/heartRate_field"
+	    android:layout_marginTop="22dp"
+	    android:inputType="number"
+	    android:hint="@string/sys_hint" />
+    
+	<EditText
+	    android:id="@+id/bloodPressureDia_field"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/bloodPressureSys_field"
+	    android:layout_alignBottom="@+id/bloodPressureSys_field"
+	    android:layout_toRightOf="@+id/bloodPressureSys_field"
+	    android:layout_marginTop="22dp"
+	    android:inputType="number"
+	    android:hint="@string/dia_hint" />
+
+	<EditText
+	    android:id="@+id/symptoms_field"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/symptoms"
+	    android:layout_alignBottom="@+id/symptoms"
+	    android:layout_alignLeft="@+id/heartRate_field"
+	    android:ems="10"
+	    android:layout_marginTop="22dp"
+	    android:hint="@string/symptoms_hint" />
+
+	<Button
+	    android:id="@+id/save"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/symptoms_field"
+	    android:layout_marginBottom="22dp"
+	    android:layout_toRightOf="@+id/heartRate_field"
+	    android:onClick="saveVitals"
+	    android:text="@string/save_button" />
+
+	<TextView
+	    android:id="@+id/symptoms"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/blood_pressure"
+	    android:layout_centerVertical="true"
+	    android:text="@string/symptoms" />
+
+	<TextView
+	    android:id="@+id/heartRate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/heartRate_field"
+	    android:layout_alignBottom="@+id/heartRate_field"
+	    android:layout_alignLeft="@+id/temperature"
+	    android:text="@string/heartRate" />
+
+	<TextView
+	    android:id="@+id/blood_pressure"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/bloodPressureSys_field"
+	    android:layout_alignBottom="@+id/bloodPressureSys_field"
+	    android:layout_alignLeft="@+id/heartRate"
+	    android:text="@string/blood_pressure" />
+
+</RelativeLayout>
